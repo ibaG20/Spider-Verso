@@ -1,9 +1,11 @@
 function handleMouseEnter() {
     this.classList.add('s-card--hovered') //adiciona sozinho uma classe no elemento quando passa o mouse por cima
+    document.body.id = `${this.id}-hovered`
 }
 
 function handleMouseLeave() {
     this.classList.remove('s-card--hovered')
+    document.body.id = ''
 }
 
 function addEventListenersToCards() {
