@@ -98,3 +98,12 @@
     background-size: cover;
 }
 
+.s-spiderman-02-01 {
+    background-image: url(/assets/images/spiderman-andrew/movie-01/background.png);
+    background-size: cover;
+}
+
+.s-spiderman-02-02 {
+    background-image: url(/assets/images/spiderman-andrew/movie-02/background.png);
+    background-size: cover;
+}
