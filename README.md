@@ -1,6 +1,6 @@
 # Spider-Verso 🕸️
 
-- Link do site: https://spider-verso.netlify.app/
+- Deploy do projeto: https://spider-verso.netlify.app/
   
 - Projeto Front-End criado num lab da DIO. 
 - https://gft.digitalinnovation.one/lab/multiverso-spider-man-criando-um-site-com-html-css-e-javascript/learning/8e433153-5ac9-49ea-b2e6-38a5a93b4f21
