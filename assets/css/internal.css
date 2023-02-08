@@ -56,6 +56,16 @@
     width: 745px;
 }
 
+#logo-tom {
+    width: 590px;
+}
+#sinopse-tom {
+    font-size: .827rem;
+}
+.gallery-tom ul li a img {
+    width: 240px;
+}
+
 .s-wrapper .s-main-content__top .s-description {
     background-color: rgba(0, 0, 0, .7); /*o ultimo é opacidade, esse ai ta 70% opaco*/
     max-width: 50%;
@@ -66,7 +76,7 @@
 .s-wrapper .s-main-content__top .s-description .s-description__text p{
     color: white;
     line-height: 170%; /*altura da linha pra n ficar grudada*/
-    font-size: .89rem;
+    /*font-size: .89rem;*/
 }
 
 .s-wrapper .s-main-content__top .s-description .pills {
@@ -105,5 +115,20 @@
 
 .s-spiderman-02-02 {
     background-image: url(/assets/images/spiderman-andrew/movie-02/background.png);
+    background-size: cover;
+}
+
+.s-spiderman-03-01 {
+    background-image: url(/assets/images/spiderman-tom/movie-01/background.png);
+    background-size: cover;
+}
+
+.s-spiderman-03-02 {
+    background-image: url(/assets/images/spiderman-tom/movie-02/background.png);
+    background-size: cover;
+}
+
+.s-spiderman-03-03 {
+    background-image: url(/assets/images/spiderman-tom/movie-03/background.png);
     background-size: cover;
 }
