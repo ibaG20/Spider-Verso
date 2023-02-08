@@ -1,11 +1,21 @@
 @import url('/assets/css/reset.css');
 @import url('/assets/css/global.css');
+@import url('/assets/css/components/_navigator.css');
+@import url('/assets/css/components/_pills.css');
+@import url('/assets/css/components/_link-button.css');
+@import url('/assets/css/components/_gallery.css');
 
 .s-wrapper {
     display: flex;
     height: 100vh; /*o vh permite conteudo flexivel, sem barra de rolagem, pq se baseia no elemento pai*/
     flex-flow: row nowrap;
 }
+
+/*pra colocar o fundo sendo um video*/
+/*.s-wrapper video {
+    position: fixed;
+    width: 100%;
+}*/
 
 .s-wrapper .s-left-column { /*significa que a classe da direita ta dentro da classe da esquerda*/
     width: 100px;
@@ -20,67 +30,63 @@
 .s-wrapper .s-main-content {
     height: 100%;
     width: 100%;
-    background-color: gray;
-    padding-left: 30px;
+    padding-left: 130px;
+    /*position: relative;*/ /*pra colocar o video tem q ativar esse*/
 }
 
-.navigator { /*div q ta encapsulando ele*/
-    width: 100%;
+.s-wrapper .s-main-content__top {
+    width: 95%;
     height: 80vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+    flex-direction: column;
+    justify-content: flex-start; /*do começo pro final*/
 }
 
-.navigator ul li {
-    margin: 60px 0;
-}
-
-/*nesse caso, a pseudo classe foi util pq n tem necessidade de 
-colocar margem encima do primeiro elemento e embaixo do ultimo*/
-.navigator ul li:first-child {
-    margin-top:0;
-}
-.navigator ul li:last-child {
-    margin-bottom:0;
-}
-.navigator ul li a {
-    color: white;
-    border: solid 2px white;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    background-color: black;
+.s-wrapper .s-main-content__bottom {
+    height: 20vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-end; /*do final pro começo*/
 }
 
-/*o pseudo elemento cria um objeto 'fantasma' no html*/
-.navigator::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    width: 2px;
-    height: 100%;
-    background-color: white;
-    z-index: 0;
+.s-wrapper .s-main-content .s-logo img {
+    margin-top: 50px;
+    margin-left: 0;
+    margin-bottom: 30px;
+    width: 745px;
 }
 
-.navigator ul {
-    z-index: 1;
-    /*x-index é a profundidade no eixo Z*/
-    /*passou as bolinhas pra frente, pq o traço tava por cima*/
+.s-wrapper .s-main-content__top .s-description {
+    background-color: rgba(0, 0, 0, .7); /*o ultimo é opacidade, esse ai ta 70% opaco*/
+    max-width: 50%;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-.navigator ul li a:hover,
-.navigator ul li a.active {
-    color: var(--primary-color);
-    background-color: white;
+.s-wrapper .s-main-content__top .s-description .s-description__text p{
+    color: white;
+    line-height: 170%; /*altura da linha pra n ficar grudada*/
+    font-size: .89rem;
 }
 
-.navigator .navigator__icon {
-    position: absolute;
-    top: -20px;
+.s-wrapper .s-main-content__top .s-description .pills {
+    margin-bottom: 20px;
 }
+
+.s-wrapper .s-main-content .s-links {
+    padding: 20px;
+    padding-left: 0;
+}
+
+.s-wrapper .s-main-content .s-links ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.s-spiderman-01-01 {
+    background-image: url(/assets/images/spiderman-tobey/movie-01/background.png);
+    background-size: cover;
+}
+
+
+
